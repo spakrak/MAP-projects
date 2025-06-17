@@ -56,7 +56,7 @@ const Navigation = () => {
           <button
             className="md:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
+          > 
             {isMenuOpen ? (
               <X className="h-6 w-6 text-gray-700" />
             ) : (
