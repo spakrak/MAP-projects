@@ -48,7 +48,7 @@ const Navigation = () => {
               );
             })}
             <Link href="/contact">
-              <Button className="bg-green-700 hover:bg-green-900 text-white">
+              <Button className="bg-blue-700 hover:bg-green-900 text-white">
                 Let's Talk
               </Button>
             </Link>
