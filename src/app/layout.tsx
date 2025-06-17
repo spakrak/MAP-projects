@@ -7,9 +7,9 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Modern Websites, Made Simple | SharpSite',
-  description: 'Professional websites for small businesses. Mobile-friendly design, transparent pricing, reliable results. No tech skills needed.',
-  keywords: 'website design, small business websites, mobile-friendly, professional web design',
+  title: 'MAP Projects | Project Development & Execution for Thermal Power',
+  description: 'MAP Projects delivers expert project development and execution for thermal power assets, including gas turbines, CHP, and BTM generation.',
+  //keywords: 'website design, small business websites, mobile-friendly, professional web design',
 }
 
 export default function RootLayout({

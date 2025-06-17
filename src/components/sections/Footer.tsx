@@ -1,64 +1,66 @@
-// src/components/sections/Footer.tsx
-import { Mail, Phone, MapPin } from 'lucide-react'
+import React from 'react';
+import { Phone, Mail, MapPin } from 'lucide-react';
+import Link from 'next/link';
 
-export function Footer() {
+const Footer = () => {
+  const navItems = [
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Services', href: '/services' },
+    { name: 'Case Studies', href: '/case-studies' },
+    { name: 'Contact', href: '/contact' }
+  ];
+
   return (
     <footer className="bg-gray-900 text-white py-12">
-      <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {/* Company Info */}
-            <div className="col-span-1 md:col-span-2">
-              <h3 className="text-2xl font-bold mb-4">SharpSite</h3>
-              <p className="text-gray-300 mb-4 max-w-md">
-                Modern websites made simple for small businesses. 
-                Professional design, transparent pricing, reliable results.
-              </p>
-              <div className="space-y-2 text-gray-300">
-                <div className="flex items-center gap-2">
-                  <Mail className="h-4 w-4" />
-                  <span>hello@sharpsite.com</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Phone className="h-4 w-4" />
-                  <span>(555) 123-4567</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4" />
-                  <span>Serving local businesses nationwide</span>
-                </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-3 gap-8">
+          <div>
+            <h3 className="text-2xl font-bold mb-4">MAP Projects</h3>
+            <p className="text-gray-400">
+              Powering Projects Forward with discipline and agility.
+            </p>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <ul className="space-y-2">
+              {navItems.map((item) => (
+                <li key={item.name}>
+                  <Link href={item.href} className="text-gray-400 hover:text-white transition-colors">
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Contact</h4>
+            <div className="space-y-2">
+              <div className="flex items-center text-gray-400">
+                <Phone className="w-5 h-5 mr-2" />
+                <a href="tel:832-260-3095" className="hover:text-white transition-colors">
+                  832-260-3095
+                </a>
+              </div>
+              <div className="flex items-center text-gray-400">
+                <Mail className="w-5 h-5 mr-2" />
+                <a href="mailto:mapprojectsllc@gmail.com" className="hover:text-white transition-colors">
+                  mapprojectsllc@gmail.com
+                </a>
+              </div>
+              <div className="flex items-start text-gray-400">
+                <MapPin className="w-5 h-5 mr-2 mt-0.5" />
+                <span>4026 Valley Green Ct<br />Houston, TX 77059</span>
               </div>
             </div>
-            
-            {/* Services */}
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Services</h4>
-              <ul className="space-y-2 text-gray-300">
-                <li><a href="#" className="hover:text-white transition-colors">Website Design</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Mobile Optimization</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">SEO Setup</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Ongoing Support</a></li>
-              </ul>
-            </div>
-            
-            {/* Company */}
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Company</h4>
-              <ul className="space-y-2 text-gray-300">
-                <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
-                <li><a href="/portfolio" className="hover:text-white transition-colors">Portfolio</a></li>
-                <li><a href="/pricing" className="hover:text-white transition-colors">Pricing</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
-              </ul>
-            </div>
           </div>
-          
-          {/* Bottom Bar */}
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 SharpSite. All rights reserved. Modern websites, made simple.</p>
-          </div>
+        </div>
+        <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+          <p>&copy; 2024 MAP Projects LLC. All rights reserved.</p>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
+
+export default Footer;
