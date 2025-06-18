@@ -129,7 +129,7 @@ const AboutPage = () => {
             <div className="flex flex-col md:flex-row gap-8 items-start">
               <div className="w-48 h-48 bg-gray-200 rounded-lg flex-shrink-0 overflow-hidden">
                 <Image
-                  src="/images/sandra-poole.jpg"
+                  src="/sandra_headshot.jpg"
                   alt="Sandra Poole, Founder & Principal"
                   width={192}
                   height={192}
