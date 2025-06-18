@@ -29,30 +29,30 @@ const MAPProjectsHomepage = () => {
       icon: <Settings className="w-10 h-10 text-green-700" />,
       title: "Project Execution",
       description:
-        "Our turnkey execution consulting and management services cover planning, permitting, procurement, construction management, and commissioning. We rigorously track schedule and budget to deliver quality results without surprises.",
+        "Our turnkey execution consulting and management services cover planning, permitting, procurement, construction management, commissioning, and services. We build detailed and usable project schedules, capturing critical milestones, progress reporting, and schedule float calculations to ensure early identification of issues before they become problems.",
       anchor: "project-execution",
     },
     {
       icon: <Users className="w-10 h-10 text-green-700" />,
       title: "Vendor Coordination",
       description:
-        "By determining and building closely aligned contracting strategies, bringing in all necessary Supply Chain partnerships and proactively aligning OEMs, contractors, and suppliers, we streamline communication and logistics—preventing delays and cost overruns so you can focus on core business priorities.",
+        "We build closely aligned contracting strategies to minimize contract gaps and future risks, and bring all necessary supply chain partnerships",
       anchor: "vendor-coordination",
     },
     {
       icon: <CheckCircle className="w-10 h-10 text-green-700" />,
       title: "Expert Staffing",
       description:
-        "By deploying seasoned Project Managers, Engineers, Project & Schedule Controllers and Commissioning Managers who integrate seamlessly with your team—providing leadership, accountability, and on-time deliverables for complex, fast-track power projects.",
+        "We deploy seasoned Project Managers, Engineers, Project & Schedule Controllers and Commissioning Managers who integrate seamlessly with your team—providing leadership, accountability, and on-time deliverables for complex, fast-track power projects.",
       anchor: "expert-staffing",
     },
   ];
 
   const advantages = [
     'EPC-grade processes, without EPC bloat',
-    'Lean, senior-led execution teams',
+    'Lean, agile, senior-led execution teams',
     'Deep thermal power domain expertise',
-    'Regional permitting knowledge & Texas market insight'
+    'Regional permitting knowledge'
   ];
 
   return (
@@ -123,8 +123,8 @@ const MAPProjectsHomepage = () => {
             </h3>
             <p className="text-gray-700 mb-4">
               MAP Projects led the development and execution of a 130MW
-              behind-the-meter gas turbine power solution for a hyperscale data
-              center in Virginia. The system was deployed on a highly compressed
+              behind-the-meter gas turbine power solution for a data
+              center campus in Virginia. The system was deployed on a highly compressed
               timeline, solving for delayed utility interconnect and tight real
               estate constraints.
             </p>
