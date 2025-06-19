@@ -21,129 +21,152 @@ const ServicesPage = () => {
 
   const services = [
     {
-      id: 'project-development',
+      id: "project-development",
       icon: <Zap className="w-12 h-12" />,
-      title: 'Project Development',
-      tagline: 'MAP works upstream to prevent scope creep and schedule slippage down the line.',
+      title: "Project Development",
+      tagline:
+        "MAP works upstream to prevent scope creep and schedule slippage down the line.",
       offerings: [
         {
-          name: 'Feasibility Studies',
-          description: 'Technical and economic analysis to validate project viability before major capital commitment.'
+          name: "Feasibility Studies",
+          description:
+            "Technical and economic analysis to validate project viability before major capital commitment.",
         },
         {
-          name: 'Application Engineering',
-          description: 'Equipment selection, heat balance optimization, and plant configuration for maximum efficiency.'
+          name: "Application Engineering",
+          description:
+            "Equipment selection, heat balance optimization, and plant configuration for maximum efficiency.",
         },
         {
-          name: 'Conceptual Design',
-          description: 'Preliminary layouts, single-lines, and P&IDs that establish project scope and budget.'
+          name: "Conceptual Design",
+          description:
+            "Preliminary layouts, single-lines, and P&IDs that establish project scope and budget.",
         },
         {
-          name: 'Commercial + Technical Strategy',
-          description: 'Align technical solutions with market opportunities and offtake requirements.'
-        }
+          name: "Commercial + Technical Strategy",
+          description:
+            "Align technical solutions with market opportunities and offtake requirements.",
+        },
       ],
       outcomes: [
-        'Validated project economics',
-        'Optimized equipment selection',
-        'Clear scope definition',
-        'Risk identification & mitigation'
+        "Validated project economics",
+        "Optimized equipment selection",
+        "Clear scope definition",
+        "Risk identification & mitigation",
       ],
-      projectTypes: 'Greenfield developments, repowering projects, behind-the-meter installations'
+      projectTypes:
+        "Greenfield developments, repowering projects, behind-the-meter installations",
     },
     {
-      id: 'project-execution',
+      id: "project-execution",
       icon: <Settings className="w-12 h-12" />,
-      title: 'Project Execution',
-      tagline: 'End-to-end support from NTP to COD.',
+      title: "Project Execution",
+      tagline: "End-to-end support from NTP to COD.",
       offerings: [
         {
-          name: 'Turnkey Execution Support',
-          description: 'Complete project management from notice to proceed through commercial operation.'
+          name: "Turnkey Execution Support",
+          description:
+            "Complete project management from notice to proceed through commercial operation.",
         },
         {
-          name: 'Permitting & Regulatory Navigation',
-          description: 'Air permits, building permits, interconnection agreements—we know the process and the people.'
+          name: "Permitting & Regulatory Navigation",
+          description:
+            "Air permits, building permits, interconnection agreements—we know the process and the people.",
         },
         {
-          name: 'Procurement Oversight',
-          description: 'RFP development, bid evaluation, contract negotiation, and expediting for all major equipment.'
+          name: "Procurement Oversight",
+          description:
+            "RFP development, bid evaluation, contract negotiation, and expediting for all major equipment.",
         },
         {
-          name: 'Commissioning & Closeout',
-          description: 'Systematic startup, performance testing, and documentation for smooth transition to operations.'
-        }
+          name: "Commissioning & Closeout",
+          description:
+            "Systematic startup, performance testing, and documentation for smooth transition to operations.",
+        },
       ],
       outcomes: [
-        'On-time project delivery',
-        'Budget adherence',
-        'Quality documentation',
-        'Smooth operational handoff'
+        "On-time project delivery",
+        "Budget adherence",
+        "Quality documentation",
+        "Smooth operational handoff",
       ],
-      projectTypes: 'Simple cycle, combined cycle, reciprocating engine plants, CHP systems'
+      projectTypes:
+        "Distributed Power, utility scale, simple amd combined cycle gas turbine and reciprocating engine plants and Balance of Plants systems",
     },
     {
-      id: 'vendor-coordination',
+      id: "vendor-coordination",
       icon: <Users className="w-12 h-12" />,
-      title: 'Vendor Coordination',
-      tagline: 'Avoid finger-pointing. We unify suppliers behind a common objective.',
+      title: "Vendor Coordination",
+      tagline:
+        "Avoid finger-pointing. We unify suppliers behind a common objective.",
       offerings: [
         {
-          name: 'OEM & Subcontractor Alignment',
-          description: 'Single point of accountability for multiple vendors, ensuring seamless interfaces.'
+          name: "OEM & Subcontractor Alignment",
+          description:
+            "Single point of accountability for multiple vendors, ensuring seamless interfaces.",
         },
         {
-          name: 'Procurement Risk Mitigation',
-          description: 'Identify and address supply chain vulnerabilities before they impact schedule.'
+          name: "Procurement Risk Mitigation",
+          description:
+            "Identify and address supply chain vulnerabilities before they impact schedule.",
         },
         {
-          name: 'Schedule & Budget Control',
-          description: 'Active management of vendor deliverables, milestones, and payment applications.'
+          name: "Schedule & Budget Control",
+          description:
+            "Active management of vendor deliverables, milestones, and payment applications.",
         },
         {
-          name: 'Quality Assurance',
-          description: 'Factory witness testing, receipt inspection, and field quality control.'
-        }
+          name: "Quality Assurance",
+          description:
+            "Factory witness testing, receipt inspection, and field quality control.",
+        },
       ],
       outcomes: [
-        'Reduced vendor conflicts',
-        'Protected project schedule',
-        'Minimized change orders',
-        'Quality equipment delivery'
+        "Reduced vendor conflicts",
+        "Protected project schedule",
+        "Minimized change orders",
+        "Quality equipment delivery",
       ],
-      projectTypes: 'Multi-vendor projects, international procurement, fast-track schedules'
+      projectTypes:
+        "Multi-vendor projects, international procurement, fast-track schedules",
     },
     {
-      id: 'expert-staffing',
+      id: "expert-staffing",
       icon: <ShieldCheck className="w-12 h-12" />,
-      title: 'Expert Staffing',
-      tagline: 'Our specialists integrate fast — no learning curve, no babysitting.',
+      title: "Expert Staffing",
+      tagline:
+        "Our specialists integrate fast — no learning curve, no babysitting.",
       offerings: [
         {
           name: "Owner's Engineers",
-          description: 'Senior technical representation to protect your interests throughout project execution.'
+          description:
+            "Senior technical representation to protect your interests throughout project execution.",
         },
         {
-          name: 'Site Managers',
-          description: 'Experienced field leadership for construction oversight and contractor coordination.'
+          name: "Site Managers",
+          description:
+            "Experienced field leadership for construction oversight and contractor coordination.",
         },
         {
-          name: 'Temporary Project Teams',
-          description: 'Scale up with proven professionals for specific project phases or technical challenges.'
+          name: "Temporary Project Teams",
+          description:
+            "Scale up with proven professionals for specific project phases or technical challenges.",
         },
         {
-          name: 'Specialized Expertise',
-          description: 'Commissioning engineers, startup specialists, compliance experts—the right skills when needed.'
-        }
+          name: "Specialized Expertise",
+          description:
+            "Commissioning engineers, startup specialists, compliance experts—the right skills when needed.",
+        },
       ],
       outcomes: [
-        'Immediate productivity',
-        'Reduced training burden',
-        'Technical depth on demand',
-        'Flexible resource scaling'
+        "Immediate productivity",
+        "Reduced training burden",
+        "Technical depth on demand",
+        "Flexible resource scaling",
       ],
-      projectTypes: 'Staff augmentation, troubled project recovery, peak workload support'
-    }
+      projectTypes:
+        "Staff augmentation, troubled project recovery, peak workload support",
+    },
   ];
 
   return (
@@ -171,7 +194,7 @@ const ServicesPage = () => {
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-start gap-4 mb-8">
-              <div className="text-green-600">{service.icon}</div>
+              <div className="text-green-700">{service.icon}</div>
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-2">
                   {service.title}
@@ -189,7 +212,7 @@ const ServicesPage = () => {
                 </h3>
                 <div className="space-y-4">
                   {service.offerings.map((offering, idx) => (
-                    <div key={idx} className="border-l-4 border-green-600 pl-4">
+                    <div key={idx} className="border-l-4 border-green-700 pl-4">
                       <h4 className="font-semibold text-gray-900">
                         {offering.name}
                       </h4>
@@ -208,7 +231,7 @@ const ServicesPage = () => {
                 <ul className="space-y-2 mb-6">
                   {service.outcomes.map((outcome, idx) => (
                     <li key={idx} className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
+                      <CheckCircle className="w-5 h-5 text-green-700 mr-2 flex-shrink-0 mt-0.5" />
                       <span className="text-gray-700">{outcome}</span>
                     </li>
                   ))}
@@ -225,7 +248,7 @@ const ServicesPage = () => {
 
             <div className="flex justify-center">
               <Link href="/contact">
-                <Button className="bg-green-600 hover:bg-green-700 text-white">
+                <Button className="bg-green-700 hover:bg-green-800 text-white">
                   Let's Talk About Your {service.title} Needs
                   <ChevronRight className="ml-2 h-4 w-4" />
                 </Button>
@@ -236,7 +259,7 @@ const ServicesPage = () => {
       ))}
 
       {/* CTA Section */}
-      <section className="py-20 bg-green-600">
+      <section className="py-20 bg-green-700">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             No Cookie-Cutter Solutions
@@ -249,7 +272,7 @@ const ServicesPage = () => {
             <Button
               size="lg"
               variant="secondary"
-              className="bg-white text-green-600 hover:bg-gray-100 px-8 py-3 text-lg"
+              className="bg-white text-green-700 hover:bg-gray-100 px-8 py-3 text-lg"
             >
               Schedule Your Consultation
             </Button>
