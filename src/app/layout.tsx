@@ -6,11 +6,21 @@ import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: 'MAP Projects | Project Development & Execution for Thermal Power',
-  description: 'MAP Projects delivers expert project development and execution for thermal power assets, including gas turbines, CHP, and BTM generation.',
-  //keywords: 'website design, small business websites, mobile-friendly, professional web design',
-}
+export const metadata = {
+  title: "MAP Projects | Power Project Consulting & Execution",
+  description:
+    "MAP Projects specializes in power project development, execution, and staffing — delivering thermal and industrial energy solutions for data centers and complex infrastructure.",
+  keywords: [
+    "power project consulting",
+    "thermal power development",
+    "data center power solutions",
+    "industrial energy infrastructure",
+    "gas turbine integration",
+    "FID support",
+    "EPC project coordination",
+    "behind-the-meter generation",
+  ],
+};
 
 export default function RootLayout({
   children,

@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import Navigation from '@/components/sections/navigation';
 import Footer from '@/components/sections/Footer';
+import Link from "next/link";
 
 const CaseStudiesPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -232,13 +233,15 @@ const CaseStudiesPage = () => {
             Let's discuss how MAP's proven approach can deliver results for your
             power project.
           </p>
-          <Button
-            size="lg"
-            variant="secondary"
-            className="bg-white text-green-700 hover:bg-gray-100 px-8 py-3 text-lg"
-          >
-            Start the Conversation
-          </Button>
+          <Link href="/contact">
+            <Button
+              size="lg"
+              variant="secondary"
+              className="bg-white text-green-700 hover:bg-gray-100 px-8 py-3 text-lg"
+            >
+              Start the Conversation
+            </Button>
+          </Link>
         </div>
       </section>
       <Footer />

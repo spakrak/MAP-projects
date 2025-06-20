@@ -16,34 +16,33 @@ const MAPProjectsHomepage = () => {
     { value: '1,600 MW', label: 'Largest Single Project' }
   ];
 
-
   const services = [
     {
       icon: <Zap className="w-10 h-10 text-green-700" />,
       title: "Project Development",
       description:
-        "From initial feasibility studies & conceptual engineering to bid packages and project scoping, we ensure your project plans are aligned with your Financial Investment Decision (FID)  technical requirements and commercial goals—minimizing risk and accelerating your path to FID and beyond.",
+        "From initial feasibility studies & conceptual engineering to bid packages and project scoping, we ensure your project plans are aligned with your Financial Investment Decision (FID) technical requirements and commercial goals—minimizing risk and accelerating your path to FID and beyond. ",
       anchor: "project-development",
     },
     {
       icon: <Settings className="w-10 h-10 text-green-700" />,
       title: "Project Execution",
       description:
-        "Our turnkey execution consulting and management services cover planning, permitting, procurement, construction management, commissioning, and services. We build detailed and usable project schedules, capturing critical milestones, progress reporting, and schedule float calculations to ensure early identification of issues before they become problems.",
+        "Our turnkey execution consulting and management services cover planning, permitting, procurement, construction management, commissioning, and startup services. We develop detailed, usable project schedules—capturing critical milestones, progress reporting, and schedule float calculations to flag issues early. Trusted for complex industrial and data center projects requiring tight coordination and schedule certainty.",
       anchor: "project-execution",
     },
     {
       icon: <Users className="w-10 h-10 text-green-700" />,
       title: "Vendor Coordination",
       description:
-        "We build closely aligned contracting strategies to minimize contract gaps and future risks, and bring all necessary supply chain partnerships",
+        "We build closely aligned contracting strategies to minimize contract gaps and future risks—ensuring clear scopes and accountability across OEMs, EPCs, and vendors. Our proactive coordination helps prevent miscommunication and delays in complex industrial and data center applications.",
       anchor: "vendor-coordination",
     },
     {
       icon: <CheckCircle className="w-10 h-10 text-green-700" />,
       title: "Expert Staffing",
       description:
-        "We deploy seasoned Project Managers, Engineers, Project & Schedule Controllers and Commissioning Managers who integrate seamlessly with your team—providing leadership, accountability, and on-time deliverables for complex, fast-track power projects.",
+        "We deploy seasoned Project Managers, Engineers, Project & Schedule Controllers, and Commissioning Managers who integrate seamlessly with your team—providing leadership, accountability, and on-time deliverables for complex, fast-track power projects across industrial and data center environments.",
       anchor: "expert-staffing",
     },
   ];
@@ -68,7 +67,8 @@ const MAPProjectsHomepage = () => {
               Powering Projects Forward
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
-              Project Development & Execution for Thermal Power Assets
+              Project Development & Execution for Thermal Power, Data Center,
+              and Industrial Applications
             </p>
             <Link href="/contact">
               <Button
@@ -123,8 +123,8 @@ const MAPProjectsHomepage = () => {
             </h3>
             <p className="text-gray-700 mb-4">
               MAP Projects led the development and execution of a 130MW
-              behind-the-meter gas turbine power solution for a data
-              center campus in Virginia. The system was deployed on a highly compressed
+              behind-the-meter gas turbine power solution for a data center
+              campus in Virginia. The system was deployed on a highly compressed
               timeline, solving for delayed utility interconnect and tight real
               estate constraints.
             </p>
@@ -134,14 +134,6 @@ const MAPProjectsHomepage = () => {
               99.99% reliable power directly into the facility’s distribution
               system.
             </p>
-            <Link href="/case-studies">
-              <Button
-                variant="outline"
-                className="border-green-700 text-green-700 hover:bg-green-50"
-              >
-                View Case Study
-              </Button>
-            </Link>
           </Card>
         </div>
       </section>
@@ -197,19 +189,6 @@ const MAPProjectsHomepage = () => {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white py-8">
-        <div className="max-w-6xl mx-auto text-center text-gray-500">
-          <p className="uppercase tracking-wide text-sm font-semibold mb-4">
-            Trusted by Partners in Energy & Industry
-          </p>
-          <div className="flex justify-center space-x-6 opacity-50">
-            <span className="text-sm">Utility Co.</span>
-            <span className="text-sm">EPC Inc.</span>
-            <span className="text-sm">Midwest Gen</span>
           </div>
         </div>
       </section>

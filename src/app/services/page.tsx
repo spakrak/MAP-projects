@@ -11,14 +11,6 @@ import Footer from '@/components/sections/Footer';
 const ServicesPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navItems = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Services', href: '/services' },
-    { name: 'Case Studies', href: '/case-studies' },
-    { name: 'Contact', href: '/contact' }
-  ];
-
   const services = [
     {
       id: "project-development",

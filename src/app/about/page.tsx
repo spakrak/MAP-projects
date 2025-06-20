@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Menu, X, Phone, Mail, MapPin, ChevronRight, Award, Target, Users, Map } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import Link from 'next/link';
 import Navigation from '@/components/sections/navigation';
 import Footer from '@/components/sections/Footer';
 import RegionalMarkets from '@/components/sections/RegionalMarkets';
@@ -17,21 +18,6 @@ const AboutPage = () => {
     { value: "25+", label: "Years Leading Power Projects" },
     { value: "8+", label: "Countries Operated In" },
     { value: "1,600 MW", label: "Largest Single Project" },
-  ];
-
-  const navItems = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Services', href: '/services' },
-    { name: 'Case Studies', href: '/case-studies' },
-    { name: 'Contact', href: '/contact' }
-  ];
-
-  const impactStats = [
-    { value: '9,100 MW', label: 'Generation Capacity Delivered' },
-    { value: '25+', label: 'Years Leading Power Projects' },
-    { value: '8+', label: 'Countries Operated In' },
-    { value: '1,600 MW', label: 'Largest Single Project' }
   ];
 
   return (
@@ -236,13 +222,15 @@ const AboutPage = () => {
           <p className="text-xl text-white mb-8">
             Let's discuss how our approach can accelerate your next project.
           </p>
-          <Button
-            size="lg"
-            variant="secondary"
-            className="bg-white text-green-700 hover:bg-gray-100 px-8 py-3 text-lg"
-          >
-            Schedule a Consultation
-          </Button>
+          <Link href="/contact">
+            <Button
+              size="lg"
+              variant="secondary"
+              className="bg-white text-green-700 hover:bg-gray-100 px-8 py-3 text-lg"
+            >
+              Schedule a Consultation
+            </Button>
+          </Link>
         </div>
       </section>
       <Footer />

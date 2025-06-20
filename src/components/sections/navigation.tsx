@@ -14,7 +14,6 @@ const Navigation = () => {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
-    { name: "Case Studies", href: "/case-studies" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -23,8 +22,12 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link href="/" className="text-2xl font-bold text-gray-900">
-              MAP Projects
+            <Link
+              href="/"
+              className="flex items-center text-2xl font-bold leading-none"
+            >
+              <span className="text-green-700">MAP</span>
+              <span className="text-gray-900 ml-1">Projects</span>
             </Link>
           </div>
           <div className="hidden md:flex items-center space-x-8">
@@ -56,7 +59,7 @@ const Navigation = () => {
           <button
             className="md:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-          > 
+          >
             {isMenuOpen ? (
               <X className="h-6 w-6 text-gray-700" />
             ) : (
